@@ -46,12 +46,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-<<<<<<< HEAD
     'multiselectfield',
-=======
-
     'crispy_forms',
->>>>>>> master
 ]
 
 MIDDLEWARE = [
@@ -172,6 +168,8 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+from decouple import config
+GOOGLE_CIVIC_API_KEY = config('GOOGLE_CIVIC_API_KEY', default='')
 
 found = True
 try:

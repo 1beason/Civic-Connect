@@ -1,20 +1,23 @@
 {% extends 'CivicConnect/base.html' %}
+
+{% load bootstrap4 %}
+
+{% block title %}Available Templates{% endblock %}
+
 {% block content %}
 
-<div class="text-center">
-	<h1> List of Available Templates </h1>
-</div>
 
 
-<ul>
+
+<ul style="list-style-type:none">
 {% for t in template %}
 <div class="text-center">
-<li><b>Topic </b>{{ t.topic }} <br></div>
-<u><b>Template: </b> <br> {{ t.template }} </u>  </li>	
+<li><b>Topic </b>{{ t.topic }} </div>
+<u><b>Template: </b> <br> {{ t.template }} </u>  </li>
 {% endfor %}
 </ul>
 
 </div>
 
-{% endblock content %}
+{% endblock %}
                          

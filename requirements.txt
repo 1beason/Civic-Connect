@@ -3,8 +3,6 @@ gunicorn
 django-on-heroku
 django-bootstrap4
 django-allauth
-<<<<<<< HEAD
+python-decouple
 django-multiselectfield
-=======
 django-crispy-forms
->>>>>>> master
